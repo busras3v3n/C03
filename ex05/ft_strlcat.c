@@ -14,12 +14,12 @@ unsigned int	ft_strlcat(char *dest, char *src, unsigned int size)
 {
 	unsigned int	i;
 	unsigned int	j;
+	unsigned int	sum;
 
 	j = 0;
 	i = 0;
 	while (dest[i] != '\0')
 		i++;
-	unsigned int sum;
 	sum = i + size;
 	while (src[j] != '\0' && i < size)
 	{
